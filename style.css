@@ -1,25 +1,287 @@
-body {background-color:bisque;}
+body {background-color: black; cursor: crosshair; margin: 0px;}
 
-article {background-color:teal; margin: 25px;}
+article {display: flex; justify-content: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 0;
+    margin-bottom: 25px; 
+    margin-left: 25px;
+    margin-right: 25px;}
 
-nav p, a {display: inline-block;}
-nav {background-color: bisque; color: black; font-size: 24px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-left: 25px;}
-nav a {color: inherit; padding-right: 25px;}
-nav p {margin-left: 20px; margin-right: 710px;}
+
+nav {background-color: black; color: white; font-size: 30px; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding: 15px 20px;}
+
+nav a {color: inherit; padding: 5px 15px; text-decoration: none;}
+
+.navbar {display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap;}
+
+.name {display: flex; justify-content: center;}
+
+.letter {
+  display: inline-block;
+}
+
+.letter:nth-child(1):hover {
+  color: #176BEF;
+}
+
+.letter:nth-child(2):hover {
+  color: #FF3E30;
+}
+
+.letter:nth-child(3):hover {
+  color: #F7B529;
+}
+
+.letter:nth-child(4):hover {
+  color: #179C52;
+}
+
+.letter:nth-child(5):hover {
+  color: #176BEF;
+}
+
+.letter:nth-child(6):hover {
+  color: #FF3E30;
+}
+
+.letter:nth-child(7):hover {
+  color: #F7B529;
+}
+
+.letter:nth-child(8):hover {
+  color: #179C52;
+}
+
+.letter:nth-child(9):hover {
+  color: #176BEF;
+}
+
+.letter:nth-child(10):hover {
+  color: #FF3E30;
+}
+
+.letter:nth-child(11):hover {
+  color: #F7B529;
+}
 
 img {padding-bottom: 95px; padding-right: 25px;}
 
-h1 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: bisque; font-size: 50px; text-align: center; padding-top: 50px;}
+.about-img {max-width: 100%; /* Make images responsive */
+  height: auto;
+  display: block; /* Remove extra space below images */
+  margin: 10px auto; /* Center images */}
 
-.container {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 35px; padding-top: 10px; color:bisque; padding-left: 25px;}
+h1 {font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: white; font-size: 50px; text-align: center; padding-top: 50px;}
 
-.container p {
-    display: flex;
-    align-items: center;
+h3 {color: white;}
+
+p {color: white;}
+
+.index-p {margin: 50px;}
+
+.container1 {font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 35px; padding-top: 10px; color:white; display:flex; align-items:center; border-radius:50px;}
+
+.container1 p {
+    flex: 1 1 auto;
+    margin-right: 20px;
+    min-width: 500px;
   }
   
-.container img {
-    margin-left: 20px;
+.container1 img {
+    margin: 15px;
+    padding-top: 65px;
     max-width: 400px;
     height: auto;
+    flex: 0 0;
+    border-radius: 25%;
   }
+
+.container2 { display: flex; /* Makes the container a flex container */
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center; /* Vertically centers the content */
+ flex-direction: column;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+text-align: center;
+}
+
+.container2 h3 {
+  align-self: center; /* Align headings to the left */
+  margin-bottom: 10px;
+  color: white; /* Add spacing below headings */
+}
+
+.container2 p {
+  align-self: center; /* Align paragraphs to the left */
+  margin-bottom: 20px; /* Add spacing below paragraphs */
+  max-width: 800px; /* Limit paragraph width */
+  color: white;
+}
+
+.container2 img {
+  max-width: 300px; /* Adjust image size */
+  height: auto;
+  margin-bottom: 20px; /* Add spacing below images */
+  align-self: center; /* Center images */
+  padding: 0;
+}
+
+/* .container3 img {
+  max-width: 200px;
+  height: auto;     
+  display: block;  
+  margin-bottom: 15px;
+  align-self: center;
+} */
+
+/* .container3 h3 {margin-top: 20px;}
+
+.container3 p {text-align: justify;} */
+
+/* .container3 {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;} */
+
+.nav-shapes {
+  display: flex;
+  align-items: center;
+}
+
+.nav-shapes .star {
+  width: 25px;
+  height: 25px;
+  background-color: #176BEF;
+  clip-path: polygon(50% 0%, 63% 35%, 98% 35%, 69% 56%, 82% 91%, 50% 70%, 18% 91%, 31% 56%, 2% 35%, 37% 35%);
+  transition: transform 1s ease;
+  will-change: transform;
+  margin: 5px;
+}
+
+.nav-shapes .star:hover {
+  background-color: #F7B529;
+}
+
+.nav-shapes .star:active {transform: translateY(100vh)}
+
+.nav-shapes .circle {
+  width: 25px;
+  height: 25px;
+  background-color: #179C52;
+  border-radius: 50%;
+  margin: 5px;
+  transition: transform 1s ease;
+}
+
+.nav-shapes .circle:hover {
+  background-color: #FF3E30;
+  transform: rotatey(180deg);
+}
+
+.nav-shapes .square {
+  width: 25px;
+  height: 25px;
+  background-color: #FF3E30;
+  margin: 5px;
+  transition: transform 1s ease;
+}
+
+.nav-shapes .square:hover {
+  background-color: #176BEF;
+  transform: skewY(60deg);
+}
+
+.nav-shapes .triangle {
+  width: 0;
+  height: 0;
+  border-left: 12.5px solid transparent;
+  border-right: 12.5px solid transparent;
+  border-bottom: 25px solid #F7B529;
+  margin: 5px;
+  transition: transform 1s ease;
+}
+
+.nav-shapes .triangle:hover {
+  border-bottom: 25px solid #179C52;
+  transform: rotate(180deg);
+}
+
+form {color:white; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin: 25px; background-color: #176BEF; padding: 150px; padding-top: 15px;}
+
+form:hover {background-color: #F7B529;}
+
+input[type="submit"] {
+  background-color:#FF3E30;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color:#179C52;
+}
+
+.contact-us {margin: 75px; color: white;}
+
+.about-header {padding: 20px; border-radius: 50%; font-size: 20px; }
+
+.about-header:hover {background-color: #179C52;}
+
+
+.emerging-tech {background-image: url("https://images.squarespace-cdn.com/content/v1/5f9f625ebb288273ba51c6ec/1665372355797-J3K2J6I6OJS1BEBVAMPB/unnamed-2.jpg"), linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  background-blend-mode: overlay;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.traveling-background-container {background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1fb896dd-cba1-4c09-89c7-c7178a830305/dg23v2s-7ad52bd6-92e7-4145-a8bf-f6172ca5973e.png/v1/fill/w_1024,h_512,q_80,strp/1920s_retro_future_iii_by_obsidianplanet_dg23v2s-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvMWZiODk2ZGQtY2JhMS00YzA5LTg5YzctYzcxNzhhODMwMzA1XC9kZzIzdjJzLTdhZDUyYmQ2LTkyZTctNDE0NS1hOGJmLWY2MTcyY2E1OTczZS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.GTlwCI9H6NJDnC3yWFSNMNIHp-6NFNpgrjvLCLb8Fwo"), linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  background-blend-mode: overlay;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.sports {background-image: url("https://files.oaiusercontent.com/file-5RMts5PfYuzRPkkjaLR84u?se=2025-02-24T00%3A23%3A38Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D13017efb-db3b-47d5-a1de-78c8e9fbdbb6.webp&sig=m9kHT%2BYQo%2BWRJMwsBD3/UZafdc2ocpOouR5v6CFe4Kw%3D"), linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  background-blend-mode: overlay;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;}
+
+.flashlight-header {font-size: 20px;}
+
+.flashlight-header {
+  position: relative;
+  background-color: #000;
+  color: #000;
+  padding: 20px;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  border-radius: 70%;
+}
+
+.flashlight-header::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 70%;
+  background: radial-gradient(circle, rgba(255, 255, 200, 0.6), rgba(255, 255, 200, 0) 70%);
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+}
+
+.flashlight-header:hover::before {
+  width: 300%;
+  height: 300%;
+  border-radius: 70%;
+}
+
+.flashlight-header:hover {
+  color: #fff;
+  border-radius: 70%;
+}
+
+
+
+
